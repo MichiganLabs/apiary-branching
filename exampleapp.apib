@@ -1,0 +1,31 @@
+FORMAT: 1A
+HOST: http://exampleapp.com/api/v1
+
+# Example App
+
+# Group User
+User resources
+
+## User [/users/{user_id}]
++ Parameters
+    + id (required, number, `1`) ... Numeric `id` of the User.
+
++ Model (application/json)
+
+    JSON representation of a User.
+
+    + Body
+
+            {
+                "id": 1,
+                "type": "user",
+                "username": "janedoe",
+                "email": "janedoe@example.com",
+                "phone": "123-456-7890",
+                "first_name": "Jane",
+                "last_name": "Doe",
+            }
+
+### Retrieve Users [GET]
++ Response 200
+    [User][]
