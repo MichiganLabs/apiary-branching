@@ -16,20 +16,21 @@ Render the blueprint and serve locally (go to http://localhost:3000/ in your bro
 make
 ```
 
-Run the [Snowcrash][snowcrash] blueprint syntax checker
+Run the [Snowcrash][snowcrash] blueprint syntax checker:
 ```shell
 make check
 ```
 
-Publish the current branch on your development server
+Publish the current branch on your development server:
 ```shell
 make deploy
 ```
 
-Publish your blueprint to Apiary.io
+Publish your blueprint to Apiary.io:
 ```shell
 make publish
 ```
+Note: You will need to set the `APIARY_API_KEY` environment variable with your Apiary token, which you can obtain [here][apiary-token].
 
 [aglio]: https://github.com/danielgtaylor/aglio
 [nodejs]: http://nodejs.org/
@@ -37,3 +38,4 @@ make publish
 [apiary-client]: https://github.com/apiaryio/apiary-client
 [snowcrash]: https://github.com/apiaryio/snowcrash
 [apiary-branches]: http://support.apiary.io/forums/120125-general/suggestions/2980709-support-versioned-documentation-through-git-branch
+[apiary-token]: https://login.apiary.io/tokens
